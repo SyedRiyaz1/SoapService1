@@ -103,6 +103,7 @@ public class RESTSOAPIntegrationTesting
 				else
 				{
 					flag=1;
+					break;
 				}
 			}
 			if(flag==0)
@@ -113,6 +114,10 @@ public class RESTSOAPIntegrationTesting
 			{
 				System.out.println("Integration Test Failed");
 			}
+		}
+		else
+		{
+			sh.getRow(i).createCell(nouc).setCellValue("Integration Test Failed-->Array size is not matching");
 		}*/
 	}
 }
